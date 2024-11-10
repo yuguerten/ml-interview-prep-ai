@@ -11,7 +11,7 @@ st.title("ML/DS Interview Preparation Assistant")
 st.markdown("*Your AI companion for interview preparation and learning*")
 
 # Configure Hugging Face credentials
-HUGGINGFACE_API_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN")
+HUGGINGFACE_API_TOKEN = st.secrets["HUGGINGFACE_API_TOKEN"]
 
 # Define templates for different functionalities
 INTERVIEW_TOPICS = {
