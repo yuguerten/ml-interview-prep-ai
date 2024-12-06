@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3'
+services:
+  streamlit:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - HUGGINGFACE_API_TOKEN=${HUGGINGFACE_API_TOKEN}
+    volumes:
+      - .:/app
